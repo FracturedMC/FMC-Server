@@ -8,7 +8,7 @@ FORGE_URL=https://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINE
 wget "$FORGE_URL" -O installer.jar
 
 echo "Downloading FracturedMC..."
-RLCRAFT_URL=$(curl https://addons-ecs.forgesvc.net/api/v2/addon/nothing/file/2935323/download-url)
-wget "$RLCRAFT_URL" -O rlcraft.zip
-unzip -q rlcraft.zip
-rm -rf rlcraft.zip
+FMC_URL=$(curl https://addons-ecs.forgesvc.net/api/v2/addon/nothing/file/2935323/download-url)
+wget "$FMC_URL" -O fmc.zip
+unzip -q fmc.zip
+rm -rf fmc.zip
